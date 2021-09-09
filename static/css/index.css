@@ -1,0 +1,88 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: linear-gradient(66deg, #e38010, #1535bf);
+  height: 100vh;
+  margin: 0;
+}
+.title {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 100;
+  padding: 40px;
+}
+.pay-form {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+  /* margin-top: 80px; */
+}
+.input-amount-wrapper,
+.input-description-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.input-amount-wrapper label,
+.input-description-wrapper label {
+  color: #fff;
+  padding: 10px 0;
+}
+.input-amount-wrapper input,
+.input-description-wrapper input {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  border: none;
+  transition: 0.4s all ease-in;
+}
+.input-amount-wrapper input:focus,
+.input-amount-wrapper input:hover,
+.input-description-wrapper input:focus,
+.input-description-wrapper input:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.input-amount-wrapper input::placeholder,
+.input-description-wrapper input::placeholder {
+  color: #fff;
+}
+.select-currency-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.select-currency-wrapper label {
+  width: 100%;
+  color: #fff;
+  padding: 10px 0;
+}
+.select-currency-wrapper select {
+  padding: 5px 20px;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.submit-btn {
+  padding: 8px 20px;
+  font-size: 16px;
+  display: inline-block;
+  background: rgba(76, 12, 254, 0.8);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.submit-btn:hover {
+  background: rgba(76, 12, 254, 1);
+}

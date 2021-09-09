@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}" />
+  </head>
+  <body>
+    <h1 class="title"><i class="fas fa-money-bill-alt"></i> Payment</h1>
+    <form action="/" method="post" class="pay-form">
+      <div class="input-amount-wrapper">
+        <label>Amount:</label>
+        <input
+          type="number"
+          min="0"
+          step="0.01"
+          name="amount"
+          value=""
+          placeholder="Set amount sum..."
+          required
+        />
+      </div>
+      <div class="select-currency-wrapper">
+        <label>Currency:</label>
+        <select name="currency">
+          <option>USD</option>
+          <option>RUB</option>
+          <option>EUR</option>
+        </select>
+      </div>
+      <div class="input-description-wrapper">
+        <label>Descriptions:</label>
+        <input
+          type="text"
+          name="descriptions"
+          value=""
+          required
+          placeholder="Enter description..."
+        />
+      </div>
+      <div class="btn-wrapper">
+        <input type="submit" value="Confirm" class="submit-btn" />
+      </div>
+    </form>
+  </body>
+</html>
